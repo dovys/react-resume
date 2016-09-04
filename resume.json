@@ -1,0 +1,57 @@
+{
+  "basics": {
+    "name": "John Doe",
+    "label": "Software Engineer",
+    "email": "john@gmail.com",
+    "phone": "(912) 555-4321",
+    "website": "https://johndoe.com",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus augue lacus, rutrum ac turpis at, iaculis facilisis purus. Morbi rutrum felis faucibus augue rutrum, a suscipit orci molestie.",
+    "location": {
+      "city": "Munich",
+      "countryCode": "DE"
+    }
+  },
+  "work": [
+    {
+      "company": "Company A",
+      "position": "Software Engineer",
+      "website": "https://company.org",
+      "startDate": "2010-02-01",
+      "endDate": "2015-10-31",
+      "summary": "Phasellus eget mauris nisi. Nullam mauris odio, faucibus a porttitor at, pulvinar vel justo. Aliquam posuere sagittis eros eu blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "highlights": [
+        "Sed molestie, tortor commodo aliquam finibus, neque enim gravida lectus, dignissim sodales metus purus eget nisl.",
+        "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "Aenean vel leo luctus, euismod elit vitae, iaculis nunc. ",
+        "Proin id feugiat turpis, nec vestibulum justo."
+      ],
+      "tags": ["React", "JavaScript"]
+    },
+    {
+      "company": "Company B",
+      "position": "Software Engineer",
+      "website": "http://company.org",
+      "startDate": "2008-07-01",
+      "endDate": "2010-02-01",
+      "summary": "Suspendisse condimentum eros leo. Aliquam cursus purus a massa varius volutpat. Phasellus faucibus est sit amet volutpat rutrum.",
+      "highlights": [
+        "Maecenas pharetra eros leo, at eleifend nisi accumsan fringilla.",
+        "Aenean vel leo luctus, euismod elit vitae, iaculis nunc.",
+        "Nam eu neque pharetra, viverra dui at, viverra orci.",
+        "Phasellus eget mauris nisi. Nullam mauris odio, faucibus a porttitor at, pulvinar vel justo."
+      ],
+      "tags": ["C#", "C++", "C", "F#"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University Name",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2002-01-01",
+      "endDate": "2006-01-01",
+      "location": "Vancouver, CA",
+      "summary": "Phasellus faucibus est sit amet volutpat rutrum. Proin id feugiat turpis, nec vestibulum justo. Duis sit amet porttitor ligula, et hendrerit turpis. Vivamus eu rhoncus augue, vel pellentesque orci. Maecenas pharetra eros leo, at eleifend nisi accumsan fringilla."
+    }
+  ]
+}
