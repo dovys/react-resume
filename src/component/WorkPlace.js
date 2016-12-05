@@ -40,12 +40,13 @@ class WorkPlace extends Component {
   }
 
   renderHighlights(highlights) {
-    if (highlights === undefined) {
+    if (highlights === undefined || highlights.length === 0) {
       return
     }
 
     return (
       <Grid width={12} classes='cv-item-details cv-item-bullet-points'>
+        Highlight features I was highly involved in developing:
         <ul>
           {highlights.map((hl, i) => <li key={i}>{hl}</li>)}
         </ul>

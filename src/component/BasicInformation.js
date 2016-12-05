@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Grid, Row } from '../lib/layout'
 
 const countryCodeMapping = {
-  DE: 'Germany'
+  DE: 'Germany',
+  GB: 'UK',
 }
 
 class BasicInformation extends Component {
