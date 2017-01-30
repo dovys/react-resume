@@ -12,7 +12,7 @@ class BasicInformation extends Component {
     name: React.PropTypes.string.isRequired,
     label: React.PropTypes.string.isRequired,
     email: React.PropTypes.string,
-    phone: React.PropTypes.string.isRequired,
+    phone: React.PropTypes.string,
     website: React.PropTypes.string.isRequired,
     summary: React.PropTypes.string.isRequired,
     location: React.PropTypes.shape({
@@ -46,7 +46,7 @@ class BasicInformation extends Component {
             <ul className='contact-info fixed'>
               <li><a href={'mailto:' + this.props.email}>{this.props.email}</a></li>
               <li><a href={this.props.website} target='_blank'>{websiteTrimmed}</a></li>
-              <li><strong>{this.props.phone}</strong></li>
+                {this.renderPhone(this.props.phone)}
               <li>{this.props.location.city}, {country}</li>
             </ul>
           </Grid>
@@ -57,6 +57,16 @@ class BasicInformation extends Component {
           </Grid>
         </Row>
       </div>
+    )
+  }
+
+  renderPhone(phone) {
+	if (phone === 'undefined' || phone === "") {
+      return
+    }
+
+    return (
+      <li><strong>{phone}</strong></li>
     )
   }
 }
