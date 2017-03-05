@@ -46,7 +46,6 @@ class WorkPlace extends Component {
 
     return (
       <Grid width={12} classes='cv-item-details cv-item-bullet-points'>
-        Highlight features I was highly involved in developing:
         <ul>
           {highlights.map((hl, i) => <li key={i}>{hl}</li>)}
         </ul>

@@ -31,8 +31,7 @@ class BasicInformation extends Component {
 
   render () {
     let websiteTrimmed = this.props.website.replace(/.*?:\/\//g, '')
-    let country = countryCodeMapping[this.props.location.countryCode]
-
+    
     return (
       <div>
         <Row>
@@ -47,7 +46,7 @@ class BasicInformation extends Component {
               <li><a href={'mailto:' + this.props.email}>{this.props.email}</a></li>
               <li><a href={this.props.website} target='_blank'>{websiteTrimmed}</a></li>
                 {this.renderPhone(this.props.phone)}
-              <li>{this.props.location.city}, {country}</li>
+                {this.renderLocation(this.props.location)}
             </ul>
           </Grid>
         </Row>
@@ -61,13 +60,37 @@ class BasicInformation extends Component {
   }
 
   renderPhone(phone) {
-	if (phone === 'undefined' || phone === "") {
+	if (!phone) {
       return
     }
 
     return (
       <li><strong>{phone}</strong></li>
     )
+  }
+
+  renderLocation(location) {
+    if (!location) {
+      return
+    }
+
+    let loc = []
+
+    console.log(location)
+
+    if (location.city) {
+      loc.push(location.city)
+    }
+
+    if (location.countryCode) {
+      loc.push(countryCodeMapping[location.countryCode])
+    }
+
+    if (loc.length === 0) {
+      return
+    }
+
+    return (<li>{loc.join(', ')}</li>)
   }
 }
 
